@@ -4,13 +4,14 @@
 <head>
     <meta charset="UFT-8">
     <title>Movie Database Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Welcome to Movie Database</h1>
     </header>
-    <section>
-        <img src="assets/images/movie database.jpeg" alt="Movie Databse Cover">
+    <section class="info-section">
+        <img class="cover-img" src="assets/images/movie database.jpeg" alt="Movie Databse Cover">
         <h2>Discover popular movies</h2>
         <p>Explore our collection of timeless and blockbusters hits.<br/>
             <i>movies that captive and inspire you.</i></p>
@@ -18,10 +19,10 @@
             Movie Database is your number 1 destination for all things movies.
         </p>
     </section>
-    <section>
-        <table border="1">
+    <section class="movie-section">
+        <table class="movie-table">
             <tr>
-                <th>Movie Title</th>
+                <th>Title</th>
                 <th>Director</th>
                 <th>Year</th>
                 <th>Genre</th>
@@ -39,7 +40,7 @@
                 <td>Action</td>
         </table>
     </section>
-    <section>
+    <section class="top-movies-section">
         <h2>Top 5 Movies</h2>
         <ol>
             <li><strong>Black Panther</strong></li>
@@ -47,7 +48,7 @@
             <li>Spiderman: Homecoming</li>
         </ol>   
     </section>
-    <section>
+    <section class="form-section">
         <h2>Enter your favourite movie</h2>
         <p>Don't see your favourite movie? Enter it below</p>
         <form action="/submit">
