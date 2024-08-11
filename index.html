@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <title>Movie Database Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Movie Database</h1>
+    </header>
+    <section>
+        <img src="assets/images/movie database.jpeg" alt="Movie Databse Cover">
+        <h2>Discover popular movies</h2>
+        <p>Explore our collection of timeless and blockbusters hits.<br/>
+            <i>movies that captive and inspire you.</i></p>
+        <p align="right">
+            Movie Database is your number 1 destination for all things movies.
+        </p>
+    </section>
+    <section>
+        <table border="1">
+            <tr>
+                <th>Movie Title</th>
+                <th>Director</th>
+                <th>Year</th>
+                <th>Genre</th>
+            </tr>
+            <tr>
+                <td>Black Panther</td>
+                <td>Ryan Coogler</td>
+                <td>2018</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td>Avengers: Endgame</td>
+                <td>Anthony Russo, Joe Russo</td>
+                <td>2019</td>
+                <td>Action</td>
+        </table>
+    </section>
+    <section>
+        <h2>Top 5 Movies</h2>
+        <ol>
+            <li><strong>Black Panther</strong></li>
+            <li>Avengers: Endgame</li>
+            <li>Spiderman: Homecoming</li>
+        </ol>   
+    </section>
+    <section>
+        <h2>Enter your favourite movie</h2>
+        <p>Don't see your favourite movie? Enter it below</p>
+        <form action="/submit">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required><br/>
+            <label for="director">Director</label>
+            <input type="text" id="director" name="director" required><br/>
+            <label for="year">Year</label>
+            <input type="date" id="year" name="year" required><br/>
+            <label for="genre">Genre</label>
+            <select id="Genre" name="Genre" required>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+            </select>
+            <label for="image">Upload image</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Movie Database</p>
+        <p>For more information, visit our <a href="https://www.imdb.com/">IMDB</a> page</p>
+</body>
+</html>
